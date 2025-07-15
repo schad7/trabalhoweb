@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #f3f0f7, #d6b4fc);
+  color: #2c2c2c;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  background-color: #a076f9;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 26px;
+  max-width: 900px;
+  margin: auto;
+  flex: 1;
+}
+.galeria p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.imagens {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.imagens img {
+  width: 200px;
+  height: 150px; /* altura fixa pra manter padrão */
+  object-fit: cover; /* recorta sem deformar */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(124, 42, 60, 0.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.imagens img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(124, 42, 60, 0.7);
+}
+
+
+h1, h2, h3 {
+  color: #7c2a3c;
+}
+
+/* --- CARROSSEL --- */
+.carrossel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  background: linear-gradient(135deg, #f5e3ff, #e0c3fc);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.carrossel-item {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
+}
+
+.carrossel-item.ativo {
+  display: flex;
+}
+
+.carrossel-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carrossel-item p {
+  background-color: #fff;
+  color: #7c2a3c;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  background-color: #7c2a3c;
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #5c1f2f;
+}
+
+
+/* Rodapé com crédito */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #a076f9;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+
+footer p::after {
+  content: " | Criado com carinho por Schinaider Adla 💜";
+  display: block;
+  font-size: 0.8em;
+  color: #f3d5ff;
+}
+
+.secao-projetos {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-projeto {
+  background-color: #fff;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card-projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-projeto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card-projeto h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-projeto p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+input{
+  border-color: #c9bce5;
+  border: 2px solid;
+}
+
+textarea{
+  border: 2px solid #19102c;
+}
+
+#contato{
+  padding-bottom: 100px;
+
+}
+
+#btnc{
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  background-color: #4d1068;
+  color: white;
+
+}
